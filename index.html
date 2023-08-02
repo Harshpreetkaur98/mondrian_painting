@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body{
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-container{
+      width: 748px;
+      height: 748px;
+      background-color: #000;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px ;
+      grid-template-rows: 414px 130px 155px 22px ; 
+      gap: 9px;
+      
+    }
+
+    .box{
+      background-color: #f0f1ec;
+    }
+    
+    .red{
+      background-color: red;
+    }
+    .second{
+      grid-column: span 3;  
+    }
+
+    .third{
+      grid-row: span 2;
+    }
+
+    .fouth{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .below-blue{
+      grid-row: span 2;
+    }
+
+
+    .yellow{
+      background-color: #fed01e;
+    }
+
+    .black{
+      background-color: black;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="main-container">
+    <div class="red box"></div>
+    <div class="second box"></div>
+    <div class="third box"></div>
+    <div class="fouth box"></div>
+
+    <div class="blue box"></div>
+    <div class="fifth below-blue box"></div>
+
+    <div class="sixth box"></div>
+
+    <div class="yellow box"></div>
+    <div class="black box"></div>
+    </div>
+
+  </div>
+</body>
+
+</html>
